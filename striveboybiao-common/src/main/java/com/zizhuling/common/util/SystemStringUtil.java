@@ -1,37 +1,37 @@
 package com.zizhuling.common.util;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 /**
  * <p>
- * 智能监管字符串工具类
+ * 系统字符串工具类
  * </p>
  *
  * @author wuchao Create on2019/8/13
  * @version 1.0
  */
-public class SystemStringUtil extends StringUtil {
+public class SystemStringUtil extends StringUtils {
     /**
-     * @description
      * @param params 可变数量字符串拼接成sql可以使用的in的语法
-     * "a", "b", "c" ---> ('a', 'b', 'c')
+     *               "a", "b", "c" ---> ('a', 'b', 'c')
      * @return java.lang.String
+     * @description
      * @author wangaogao
      * @date 2019/9/25 15:50
      */
-    public static String stringsJoinInSql(String ... params) {
+    public static String stringsJoinInSql(String... params) {
         return joinInSql(Arrays.asList(params));
     }
 
     /**
+     * @param target 目标元素
      * @description: 将目标集合的元素拼接成sql可以使用的in的语法
      * <p>['a','b','c'] ---> ('a','b','a')<p/>
-     *
      * @author: Fang Kun update
-     * @param target  目标元素
      * @date: 2020/3/23 13:47
      * @return: java.lang.String
      */
@@ -61,55 +61,55 @@ public class SystemStringUtil extends StringUtil {
      * @modified By: Fang Kun 修改like变成instr函数, 此方法作用去字符串前后的空格
      */
     public static String buildLikeSql(String param) {
-        if(SystemStringUtil.isEmpty(param)){
+        if (SystemStringUtil.isEmpty(param)) {
             return param;
         }
         return param.trim();
     }
 
     /**
-     * @description 组装like的sql语句
-     *
      * @param param
      * @return java.lang.String
+     * @description 组装like的sql语句
      * @author Fang Kun
      * @date 2019/12/6 15:19
      */
-    public static String likeSqlHandler(String param){
+    public static String likeSqlHandler(String param) {
         // 如果是个空格, 去空格
         if (StringUtil.isEmpty(param)) {
             return param;
         }
         // 处理 " "
-        if(StringUtil.isBlank(param)){
+        if (StringUtil.isBlank(param)) {
             return param.trim();
         }
         // 去空格;
-        param=param.trim();
+        param = param.trim();
         // 如果有 %
-        if(param.contains("%")){
-            param = param.replace("%","\\%");
+        if (param.contains("%")) {
+            param = param.replace("%", "\\%");
         }
         // 如果有 _
-        if(param.contains("_")){
-            param = param.replace("_","\\_");
+        if (param.contains("_")) {
+            param = param.replace("_", "\\_");
         }
         // 如果有 []
-        if(param.contains("[]")){
-            param = param.replace("[]","\\[]");
+        if (param.contains("[]")) {
+            param = param.replace("[]", "\\[]");
         }
         return "%" + param + "%";
     }
 
-    private  static Pattern pattern = Pattern.compile("[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]");
+    private static Pattern pattern = Pattern.compile("[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]");
 
     /**
      * 判断是否有表情
+     *
      * @param content
      * @return
      */
-    public static boolean hasEmoji(String content){
-        if(isEmpty(content)){
+    public static boolean hasEmoji(String content) {
+        if (isEmpty(content)) {
             return false;
         }
         Matcher matcher = pattern.matcher(content);
@@ -117,10 +117,10 @@ public class SystemStringUtil extends StringUtil {
     }
 
     /**
-     * @description 解决in超过1000报错,拼接成sql可以使用的in的语法
-     * @param target  数据 , name  字段名
-     * ['a','b','c','e','f'] --->  name in ('a', 'b', 'c')  or name in ('e','f')
+     * @param target 数据 , name  字段名
+     *               ['a','b','c','e','f'] --->  name in ('a', 'b', 'c')  or name in ('e','f')
      * @return java.lang.String
+     * @description 解决in超过1000报错, 拼接成sql可以使用的in的语法
      * @author hebiao
      * @date 2019/9/25 15:50
      */
@@ -145,10 +145,9 @@ public class SystemStringUtil extends StringUtil {
     }
 
     /**
-     * @description: 转成string，如果是null则返回"" nullTransformationEmpty
-     *
-     * @author: Fang Kun
      * @param value 需要处理的对象
+     * @description: 转成string，如果是null则返回"" nullTransformationEmpty
+     * @author: Fang Kun
      * @date: 2020/3/23 13:48
      * @return: java.lang.String
      */
@@ -161,5 +160,4 @@ public class SystemStringUtil extends StringUtil {
             return String.valueOf(value);
         }
     }
-
 }

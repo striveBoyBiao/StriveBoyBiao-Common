@@ -14,7 +14,6 @@ import java.util.Properties;
  * <p>
  * Properties 文件的工具类
  * </p>
- * Copyright (C) 2020 Kingstar Winning, Inc. All rights reserved.
  *
  * @author hebiao Create on 2020/4/26 16:27
  * @version 1.0

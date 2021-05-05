@@ -3,7 +3,7 @@ package com.zizhuling.common.exception;
 
 /**
  * <p>
- * 基金异常类
+ * 异常类
  * </p>
  *
  * @author wuchao Create on 2019/8/27

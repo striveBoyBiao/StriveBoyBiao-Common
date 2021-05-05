@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 /**
  * <p>
- * 智能监管时间工具类
+ * 系统时间工具类
  * </p>
  *
  * @author hebiao Create on2019/8/26
@@ -152,7 +152,7 @@ public class SystemDateUtil extends DateUtil {
      * @param date
      * @return java.lang.Integer
      * @description 获取日期中的日
-     * @author gengxiu
+     * @author hebiao
      * @date 2019/9/12 15:00
      */
     public static Integer getDay(Date date) {
@@ -169,7 +169,7 @@ public class SystemDateUtil extends DateUtil {
      * @param date
      * @return java.lang.Integer
      * @description 获取日期中的时
-     * @author gengxiu
+     * @author hebiao
      * @date 2019/9/16 19:46
      */
     public static Integer getHour(Date date) {
@@ -186,7 +186,7 @@ public class SystemDateUtil extends DateUtil {
      * @param date
      * @return java.lang.Integer
      * @description 获取日期中的分
-     * @author gengxiu
+     * @author hebiao
      * @date 2019/9/16 19:47
      */
     public static Integer getMinute(Date date) {
@@ -234,7 +234,7 @@ public class SystemDateUtil extends DateUtil {
      * @param date
      * @return java.lang.String
      * @description Date格式转String
-     * @author gengxiu
+     * @author hebiao
      * @date 2019/9/19 19:25
      */
     public static String dateConvertToString(Date date) {
@@ -250,7 +250,7 @@ public class SystemDateUtil extends DateUtil {
      * @description: string转日期（yyyy-mm-dd）
      * @param dateStr
      * @return: java.util.Date
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/6/12 19:11
      */
     public static Date stringConvertToDate(String dateStr) {
@@ -273,7 +273,7 @@ public class SystemDateUtil extends DateUtil {
      * @param formart
      * @return java.lang.String
      * @description 传时间格式
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/9/26 19:22
      */
     public static String dateConvertToString(Date date, String formart) {
@@ -293,7 +293,7 @@ public class SystemDateUtil extends DateUtil {
      * @param date
      * @return java.lang.String
      * @description Date格式转String 格式:yyyy-MM-dd
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/9/26 17:28
      */
     public static String dateConvertToStringYMD(Date date) {
@@ -464,7 +464,7 @@ public class SystemDateUtil extends DateUtil {
      *
      * @param target 指定时间
      * @return 格式化后的字符串
-     * @author Hao.Y
+     * @author hebiao
      */
     public static String formateYM(String target) {
         target = target.trim();
@@ -479,7 +479,7 @@ public class SystemDateUtil extends DateUtil {
      *
      * @param target 指定时间
      * @return 格式化后的字符串
-     * @author Hao.Y
+     * @author hebiao
      */
     public static String formateY_M(String target) {
         target = target.trim();
@@ -494,7 +494,7 @@ public class SystemDateUtil extends DateUtil {
      *
      * @param target 指定时间
      * @return 格式化后的字符串
-     * @author Hao.Y
+     * @author hebiao
      */
     public static String formateYMD(String target) {
         target = target.trim();
@@ -509,7 +509,7 @@ public class SystemDateUtil extends DateUtil {
      *
      * @param target 指定时间
      * @return 格式化后的字符串
-     * @author Hao.Y
+     * @author hebiao
      */
     public static String formateY_M_D(String target) {
         target = target.trim();
@@ -524,7 +524,7 @@ public class SystemDateUtil extends DateUtil {
      *
      * @param target
      * @return
-     * @author Hao.Y
+     * @author hebiao
      */
     private static boolean dateValidate(String target, String regex) {
         Pattern pattern = Pattern.compile(regex);
@@ -540,7 +540,7 @@ public class SystemDateUtil extends DateUtil {
      * @param endStr
      * @param parseRegex
      * @return
-     * @author gaoyaopeng
+     * @author hebiao
      */
     public static void judgeDate(String startStr, String endStr, String parseRegex) {
         try {
@@ -558,7 +558,7 @@ public class SystemDateUtil extends DateUtil {
      * @param startDate
      * @param endDate
      * @return
-     * @author gaoyaopeng
+     * @author hebiao
      */
     public static void judgeDate(Date startDate, Date endDate) {
         long t = startDate.getTime() - endDate.getTime();
@@ -571,7 +571,7 @@ public class SystemDateUtil extends DateUtil {
      * @param year 年份字符串
      * @param size 集合的长度
      * @description: 获取一个指定长度的年份的字符串数组
-     * @author: Fang Kun
+     * @author: hebiao
      * @date: 2020/4/15 16:49
      * @return: java.util.List<java.lang.String>
      */
@@ -595,7 +595,7 @@ public class SystemDateUtil extends DateUtil {
      * @param statYear 年份
      * @description: 获取对应年份的所有月份
      * @return: java.util.List<java.lang.String> yyyyMM
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/15 19:18
      */
     public static List<String> getMonthsByYear(String statYear) {
@@ -620,7 +620,7 @@ public class SystemDateUtil extends DateUtil {
      * @param statYear 年份
      * @description: 获取对应年份的所有月份（本年度截止到当前月）
      * @return: java.util.List<java.lang.String> yyyyMM
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/15 19:18
      */
     public static List<String> getMonthsByYearToNow(String statYear) {
@@ -648,7 +648,7 @@ public class SystemDateUtil extends DateUtil {
      * @param yearMon yyyyMM字符串
      * @description: 将yyyyMM转为yyyy年MM月
      * @return: java.lang.String yyyy年MM月 格式字符串
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/15 20:30
      */
     public static String getYearAndMonthChineseFromString(String yearMon) {
@@ -662,7 +662,7 @@ public class SystemDateUtil extends DateUtil {
      * @param monthList yyyyMM格式数组
      * @description: 将yyyyMM转为yyyy年MM月
      * @return: java.util.List<java.lang.String> yyyy年MM月格式数组
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/15 20:09
      */
     public static List<String> getYearAndMonthChineseFromList(List<String> monthList) {
@@ -678,10 +678,10 @@ public class SystemDateUtil extends DateUtil {
         return result;
     }
 
-    /*
+    /**
      * @param year
      * @description: 根据年份获取当年结束时间
-     * @author: gengxiu
+     * @author: hebiao
      * @date: 2020/3/31 15:44
      * @return: java.util.Date
      */
@@ -699,7 +699,7 @@ public class SystemDateUtil extends DateUtil {
     /**
      * @param year
      * @description: 根据年份获取当年起始时间
-     * @author: gengxiu
+     * @author: hebiao
      * @date: 2020/3/31 15:44
      * @return: java.util.Date
      */

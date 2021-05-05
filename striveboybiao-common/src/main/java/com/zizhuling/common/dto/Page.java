@@ -9,6 +9,7 @@ import java.util.Objects;
 
 /**
  * <p>
+ *     分页DTO
  * </P>
  *
  * @author hebiao Create on 2020/7/18 17:48

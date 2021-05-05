@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  * <p>
+ *     key,value值
  * </P>
  *
  * @author hebiao Create on 2020/7/18 18:01

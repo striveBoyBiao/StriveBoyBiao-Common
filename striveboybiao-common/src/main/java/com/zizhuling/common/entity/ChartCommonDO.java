@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * * @description: 饼图DO
+ * @description: 饼图DO
  * @author: wangaogao
  * @date: Created in 2019/10/7 18:43
  * @version: 1.0

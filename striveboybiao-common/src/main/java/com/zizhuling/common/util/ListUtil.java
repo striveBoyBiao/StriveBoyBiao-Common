@@ -13,11 +13,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * <p>
+ *    list工具
+ * </p>
  *
- * @author Hao.Y Createon
- * @version 1.0 2020/1/14 11:04
+ * @author hebiao Create on2019/8/26
+ * @version 1.0
  */
 public class ListUtil {
+
+
     /**
      * list集合查询条件大小限制
      */
@@ -52,7 +57,7 @@ public class ListUtil {
      * @description: map中key由下划线转为驼峰
      * @param dataMap map集合
      * @return: void
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/28 18:29
      */
     public static Map<String, Object> parseMapToHumpFromUnderline(Map<String, Object> dataMap) {
@@ -73,7 +78,7 @@ public class ListUtil {
      * @param dataMap map集合
      * @param cls 类
      * @return: T 对象
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/28 18:28
      */
     public static <T> T parseObjectFromMap(Map<String, Object> dataMap, Class<T> cls){
@@ -87,7 +92,7 @@ public class ListUtil {
      * @param orderColumn 排序字段
      * @param orderType 排序方式
      * @return: int 比较结果
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/5/13 14:59
      */
     public static int compare(Object o1, Object o2, String orderColumn, String orderType) {

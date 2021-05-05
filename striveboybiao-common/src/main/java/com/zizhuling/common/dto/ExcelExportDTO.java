@@ -6,8 +6,10 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- *
- * @author Fang Kun Created on 2019/10/2210:19
+ * <p>
+ *     excel导出DTO
+ * </P>
+ * @author hebiao Created on 2019/10/2210:19
  * @version 1.0
  */
 public class ExcelExportDTO implements Serializable {

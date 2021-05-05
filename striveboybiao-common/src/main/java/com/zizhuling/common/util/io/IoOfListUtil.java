@@ -12,7 +12,7 @@ public class IoOfListUtil {
      *
      * @param original
      * @return java.lang.Byte[]
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/10/30 19:09
      */
     public static Byte[] toWrap(byte[] original) {

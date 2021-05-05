@@ -2,15 +2,15 @@ package com.zizhuling.common.constant;
 
 /**
  * <p>
- * 智能监管的响应常量类
+ * 响应常量类
  * </p>
  *
- * @author lishang Create on2019/8/6
+ * @author hebiao Create on2019/8/6
  * @version 1.0
  */
 public class ResponseConstant {
-    /*
-    添加成功
+    /**
+     *添加成功
      */
     public static  final String INSERT_SUCCESS = "新建成功";
     /**
@@ -52,8 +52,8 @@ public class ResponseConstant {
      */
     public static  final String DELETE_FAILED = "删除失败";
 
-    /*
-   添加失败
+    /**
+    * 添加失败
     */
     public static  final String INSERT_FAILED = "添加失败";
 

@@ -19,7 +19,7 @@ public class OperationUtil {
      * @param val1 加数
      * @param val2 加数
      * @return: java.math.BigDecimal 相加的值
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/5/22 9:53
      */
     public static BigDecimal bigDecimalAdd(BigDecimal val1, BigDecimal val2) {
@@ -40,7 +40,7 @@ public class OperationUtil {
      * @param scale 小数点位数
      * @param roundingMode rounding mode to apply.
      * @return: java.math.BigDecimal 结果值
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/5/26 17:32
      */
     public static BigDecimal bigDecimalDivide(BigDecimal val1, BigDecimal val2, int scale, RoundingMode roundingMode) {
@@ -58,7 +58,7 @@ public class OperationUtil {
      * @description: BigDecimal去除小数点多余零
      * @param bigDecimal bigDecimal
      * @return: java.math.BigDecimal
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/6/30 18:02
      */
     public static BigDecimal formatBigDecimalTriZero(BigDecimal bigDecimal) {

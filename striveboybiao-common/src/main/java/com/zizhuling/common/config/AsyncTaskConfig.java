@@ -13,7 +13,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
  * * @description: 公用线程池配置
- * @author: wangaogao
+ * @author: hebiao
  * @date: Created in 2019/11/8 20:57
  * @version: 1.0
  */

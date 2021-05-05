@@ -14,7 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 public class DataDesensitizedHandler {
 
     /** 脱敏正则 */
-    //private static final String DATA_DESENSITIZED_REGEX = "(\\w{3})\\w*(\\w{4})";
+    private static final String DATA_DESENSITIZED_REGEX = "(\\w{3})\\w*(\\w{4})";
     /**
      * 脱敏替换
      */

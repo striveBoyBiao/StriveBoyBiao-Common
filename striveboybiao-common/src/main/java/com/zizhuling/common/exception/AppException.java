@@ -2,6 +2,7 @@ package com.zizhuling.common.exception;
 
 /**
  * <p>
+ *     异常
  * </P>
  *
  * @author hebiao Create on 2020/7/18 18:14

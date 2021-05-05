@@ -14,6 +14,13 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @PropertySource(value = "classpath:META-INF/prop/common.properties")
 public class CommonPropertyConfig {
+    private String ruleCntsSttTrendTitle;
 
+    public String getRuleCntsSttTrendTitle() {
+        return ruleCntsSttTrendTitle;
+    }
 
+    public void setRuleCntsSttTrendTitle(String ruleCntsSttTrendTitle) {
+        this.ruleCntsSttTrendTitle = ruleCntsSttTrendTitle;
+    }
 }

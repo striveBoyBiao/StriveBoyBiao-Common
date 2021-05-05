@@ -11,7 +11,7 @@ import java.util.List;
  *  根据全量数据，内存中分页
  * </p>
  *
- * @author lishang Created on 2019/10/28 16:29
+ * @author hebiao Created on 2019/10/28 16:29
  * @version 1.0
  */
 public class PageUtil {
@@ -32,7 +32,7 @@ public class PageUtil {
      * @param pageSize 每页条数
      * @param datas 数据
      * @return: cn.hsa.winning.common.component.Page
-     * @author: wangaogao
+     * @author: hebiao
      * @date: 2020/4/23 10:12
      */
     public static Page pagination(int currentPage, int pageSize, List<?> datas){

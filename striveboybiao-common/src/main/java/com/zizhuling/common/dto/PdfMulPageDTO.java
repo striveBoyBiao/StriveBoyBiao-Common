@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  *
- * @author Fang Kun$ Created on 2019/10/1016:35
+ * @author hebiao Created on 2019/10/1016:35
  * @version 1.0
  */
 public class PdfMulPageDTO {

@@ -2,7 +2,7 @@ package com.zizhuling.common.constant;
 
 /**
  *
- * @author wuchao Create on2019/8/28
+ * @author hebiao Create on 2019/8/28
  * @version 1.0
  */
 public class SystemConstants {
@@ -130,36 +130,7 @@ public class SystemConstants {
 
     public static final String  DATE_YEAR = "yyyy";
     public static final String  DATE_MONTH = "MM";
-    /**
-     * 季度 Q1,Q2,Q3,Q4
-     */
-    public static final String  Q1 = "Q1";
-    public static final String  Q2 = "Q2";
-    public static final String  Q3 = "Q3";
-    public static final String  Q4 = "Q4";
 
-    /**
-     * 进销存比对分析excel
-     */
-    public static final String  SELT_SEL_CPR = "比对分析";
-
-    /**
-     * 热力图部分常量
-     */
-    public static final String  HEI = "黑";
-    public static final String  NEI = "内";
-    public static final String  XIN = "新疆建设兵团";
-
-    /**
-     * 字符串连接分隔符
-     */
-    public static final String  SEPARATOR = ",";
-
-    /**
-     * 折线图单位
-     */
-    public static final String  RC_RS_VALUE="人";
-    public static final String  WG_KK_VALUE="万元";
     /**
      * 导出excel时间格式
      */
@@ -170,10 +141,6 @@ public class SystemConstants {
      */
     public static final String  CODE="code";
     public static final String  MESSAGE="message";
-    /**
-     * 比对分析导出文件名称
-     */
-    public static final String  SETL_SEL_FILE_NAME="药品结算销售比对统计表";
 
     /**
      * 最大上传文件数量
@@ -224,19 +191,6 @@ public class SystemConstants {
      * 空格
      */
     public static final String  BLANK_SPACE= " ";
-    /**
-     * 行政区划
-     */
-    public static final String  ADMDVS="admdvs";
-    /**
-     * 前端下拉框key
-     */
-    public static final String  LABEL="label";
-
-    /**
-     *  SONAR:Define a constant instead of duplicating this literal "E10009" 3 times.
-     */
-    public static final String  E_CODE = "E10009";
 
     /**
      * 上报附件id

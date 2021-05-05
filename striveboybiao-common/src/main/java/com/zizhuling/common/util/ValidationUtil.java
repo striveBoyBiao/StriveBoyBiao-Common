@@ -9,12 +9,10 @@ import java.util.regex.Pattern;
  * 验证的工具类
  * </p>
  *
- * @author Fang Kun Created on 2019/8/2714:27
+ * @author hebiao Created on 2019/8/2714:27
  * @version 1.0
- * @modified By:lishang 删除冗余方法
  */
 public class ValidationUtil {
-	// 正则
 
 	/**
 	 *手机号

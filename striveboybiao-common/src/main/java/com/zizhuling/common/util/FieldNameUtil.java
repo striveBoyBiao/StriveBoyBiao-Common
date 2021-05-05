@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 
 /**
  * <p>
- * 字段驼峰下划线
+ * 字段驼峰下划线之间转换
  * </p>
  *
  * @author hebiao Create on2019/8/26

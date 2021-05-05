@@ -1,5 +1,7 @@
 package com.zizhuling.common.util;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.zizhuling.common.dto.WrapperResponse;
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,7 +19,7 @@ public class UtilTest {
     @Test
     public void demo(){
         WrapperResponse wrapperResponse = WrapperResponse.success("success");
-        Assert.assertNotNull(wrapperResponse);
+        System.out.println(JSON.toJSON(wrapperResponse));
     }
 
 

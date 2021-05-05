@@ -38,7 +38,7 @@ public class FileUtil {
      * @param filePath
      * @param fileNme
      * @return boolean
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/10/25 12:23
      */
     public static boolean checkFile(@NotNull String filePath, @NotNull String fileNme){
@@ -71,7 +71,7 @@ public class FileUtil {
      * @description 再这个文件夹下面创建文件
      *
      * @return void
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/10/25 12:24
      */
     public static void createFile(@NotNull String filePath, @NotNull String fileNme, @NotNull InputStream resourceAsStream){
@@ -94,7 +94,7 @@ public class FileUtil {
     /**
      * @description: 获取文件资源路径
      *
-     * @author: Fang Kun
+     * @author: hebiao
      * @param resourcePath 资源路径
      * @param str
      * @param itemName
@@ -150,7 +150,7 @@ public class FileUtil {
      *
      * @param outputStream
      * @return void
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/10/30 20:07
      */
     @SuppressWarnings("all")
@@ -179,10 +179,9 @@ public class FileUtil {
      *
      * @param inputStream
      * @return void
-     * @author Fang Kun
+     * @author hebiao
      * @date 2019/10/30 20:08
      */
-    @SuppressWarnings("all")
     public static void closeStreamOfIn(InputStream inputStream){
         try {
             if(inputStream!=null){

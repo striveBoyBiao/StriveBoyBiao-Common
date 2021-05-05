@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * <p>
+ *     字符串工具类
  * </P>
  *
  * @author hebiao Create on 2020/7/11 18:10

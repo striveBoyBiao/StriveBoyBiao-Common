@@ -20,7 +20,7 @@ import java.util.zip.ZipOutputStream;
  * 描述：zip文件工具类，压缩，解压
  * </p>
  *
- * @author lishang Created on 2020/4/2101:57
+ * @author hebiao Created on 2020/4/2101:57
  * @version 1.0
  */
 public class ZipUtil {

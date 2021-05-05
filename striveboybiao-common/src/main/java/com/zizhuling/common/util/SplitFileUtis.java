@@ -1,12 +1,17 @@
 package com.zizhuling.common.util;
 import java.io.*;
 
-/***
+/**
+ * <p>
  *  分割大文件
  * （
  *      SQL 文件太大（insert），第三方工具无法一次性读取，进行分割
  *      生成 一个一个文件
  *  ）
+ * </p>
+ *
+ * @author hebiao Create on 2020/4/26 16:27
+ * @version 1.0
  */
 public class SplitFileUtis {
 
