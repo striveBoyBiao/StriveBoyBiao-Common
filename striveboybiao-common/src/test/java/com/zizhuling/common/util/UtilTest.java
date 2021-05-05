@@ -20,6 +20,7 @@ public class UtilTest {
     public void demo(){
         WrapperResponse wrapperResponse = WrapperResponse.success("success");
         System.out.println(JSON.toJSON(wrapperResponse));
+        System.out.println(wrapperResponse);
     }
 
 
