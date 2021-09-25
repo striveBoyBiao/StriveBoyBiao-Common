@@ -1,4 +1,4 @@
-package com.zizhuling.common.util.pdfpageexport;
+package com.zizhuling.common.util.pdf;
 
 import com.zizhuling.common.constant.SystemConstants;
 import com.zizhuling.common.dto.PdfMulPageDTO;
@@ -8,6 +8,7 @@ import com.itextpdf.text.PageSize;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
+import com.zizhuling.common.util.io.FileUtil;
 import freemarker.template.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

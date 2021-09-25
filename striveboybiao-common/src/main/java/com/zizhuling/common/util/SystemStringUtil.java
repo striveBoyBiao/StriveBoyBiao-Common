@@ -2,8 +2,10 @@ package com.zizhuling.common.util;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
@@ -15,6 +17,9 @@ import java.util.regex.Pattern;
  * @version 1.0
  */
 public class SystemStringUtil extends StringUtils {
+    private static final String SYMBOLS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final Random RANDOM = new SecureRandom();
+
     /**
      * @param params 可变数量字符串拼接成sql可以使用的in的语法
      *               "a", "b", "c" ---> ('a', 'b', 'c')
@@ -160,4 +165,19 @@ public class SystemStringUtil extends StringUtils {
             return String.valueOf(value);
         }
     }
+
+    /**
+     * 生成随机字符串
+     *
+     * @param size 字符串长度
+     */
+    public static String generateNonce(int size) {
+        char[] nonceChars = new char[size];
+        for (int index = 0; index < nonceChars.length; ++index) {
+            nonceChars[index] = SYMBOLS.charAt(RANDOM.nextInt(SYMBOLS.length()));
+        }
+        return new String(nonceChars);
+    }
+
+
 }

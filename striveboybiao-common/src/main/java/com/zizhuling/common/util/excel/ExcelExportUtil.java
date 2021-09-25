@@ -1,7 +1,7 @@
 package com.zizhuling.common.util.excel;
 
 import com.zizhuling.common.dto.ExcelExportDTO;
-import com.zizhuling.common.util.pdfpageexport.PdfMulPageExportUtil;
+import com.zizhuling.common.util.pdf.PdfMulPageExportUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.xssf.usermodel.XSSFCell;

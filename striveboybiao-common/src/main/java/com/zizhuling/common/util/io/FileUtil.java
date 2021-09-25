@@ -1,11 +1,11 @@
-package com.zizhuling.common.util.pdfpageexport;
+package com.zizhuling.common.util.io;
 
 import com.zizhuling.common.constant.SystemConstants;
 import com.zizhuling.common.util.SystemStringUtil;
 import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.validation.constraints.NotNull;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -200,6 +200,21 @@ public class FileUtil {
                 }
             }
         }
+    }
+
+    /**
+     * 获得文件扩展名
+     *
+     * @param fileName 文件名
+     * @return 扩展名
+     */
+    public static String getFileType(String fileName) {
+        if (StringUtils.isEmpty(fileName) || !fileName.contains(".")) {
+            return "unknown";
+        }
+        String[] strArray = fileName.split("\\.");
+        int suffixIndex = strArray.length - 1;
+        return strArray[suffixIndex];
     }
 
 }
